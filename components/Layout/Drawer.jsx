@@ -1,6 +1,3 @@
-"use client";
-import { useState } from "react";
-
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -20,11 +17,11 @@ function Drawer() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon">
+        <Button variant="outline" size="icon" className="btn_bd">
           <MenuIcon className="w-5 h-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-black text-white border-none">
         <SheetHeader>
           <SheetTitle>
             <Logo />
@@ -34,7 +31,7 @@ function Drawer() {
               <SheetClose asChild key={index}>
                 <a
                   href={item.url}
-                  className="block text-sm text-foreground hover:underline cursor-pointer"
+                  className="block text-sm hover:underline cursor-pointer"
                 >
                   {item.title}
                 </a>

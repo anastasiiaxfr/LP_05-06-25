@@ -1,0 +1,179 @@
+@layer components {
+    .section {
+        @apply relative my-10 lg:my-20;
+    }
+
+    .section_hero,
+    .section_faq {
+        @apply bg-black text-white my-0 py-10 lg:py-20;
+    }
+
+    .section_hero .container {
+        @apply grid grid-cols-1 md:grid-cols-2 gap-10 items-center;
+    }
+
+    .section_testimonials,
+    .section_cta {
+        @apply bg-black text-white my-0;
+    }
+
+    .section_cta {
+        @apply pb-10 lg:pb-20;
+    }
+
+    .section_support {
+        @apply flex flex-col md:grid items-center;
+    }
+
+    .section_support>* {
+        grid-area: 1/1/2/2;
+    }
+
+    .row {
+        @apply grid grid-cols-1 md:grid-cols-2 items-center;
+    }
+
+    .row_1 {
+        @apply grid grid-cols-1 lg:grid-cols-2 items-start gap-x-10;
+    }
+
+
+    .services {
+        @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10;
+    }
+
+    .service {
+        @apply grid grid-cols-[80px_auto] gap-4;
+    }
+
+    .service>img {
+        @apply w-[80px];
+    }
+
+    .brands {
+        @apply flex gap-4 flex-wrap mt-10;
+    }
+
+    .imgs {
+        display: grid;
+    }
+
+    .imgs>* {
+        grid-area: 1/1/2/2;
+    }
+
+    .imgs_desc {
+        @apply mt-auto p-10 grid grid-cols-[auto_1fr] gap-2 items-center;
+    }
+
+    .comment {
+        @apply text-center;
+    }
+
+    .comment_info {
+        @apply mt-10 opacity-50;
+    }
+
+
+    .comment_desc {
+        @apply text-xl lg:text-2xl leading-relaxed;
+    }
+
+    .slider_1 .swiper-pagination {
+        @apply !relative mt-10;
+    }
+
+    .slider_1 .swiper-pagination-bullet {
+        @apply !bg-white/100;
+    }
+
+
+    .cards {
+        @apply mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5;
+    }
+
+    .card {
+        @apply p-5 rounded-lg border border-gray-200 hover:shadow-xl transition;
+    }
+
+    .card_title {
+        @apply lg:text-xl mb-5 mt-6 font-bold;
+    }
+
+    .card_desc {
+        @apply text-sm;
+    }
+
+    .items {
+        @apply grid mt-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10;
+    }
+
+    .item {
+        @apply border border-gray-200 rounded-sm overflow-hidden hover:shadow-xl transition;
+    }
+
+    .item_body {
+        @apply p-10;
+    }
+
+    .item_title {
+        @apply mb-5 text-xl font-bold;
+    }
+
+    .item_img {
+        @apply object-cover aspect-[2/1] w-full;
+    }
+
+
+    .faq {
+        @apply w-full grid gap-2;
+    }
+
+    .faq_item {
+        @apply border-white/20 py-3 px-8 rounded-sm select-none;
+    }
+
+    .faq_item[data-state="open"] {
+        @apply bg-white/10;
+    }
+
+    .faq_title {
+        @apply !text-xl font-bold hover:!no-underline cursor-pointer hover:text-primary;
+    }
+
+
+    .apps {
+        @apply flex gap-4 flex-wrap mt-4;
+    }
+
+    .app {
+        @apply bg-white/10 rounded-lg p-4;
+    }
+
+
+    .tabs {
+        @apply !flex flex-col md:!flex-row !gap-10 mt-10;
+    }
+
+    .tabs_list {
+        @apply flex flex-col items-start justify-start gap-0 !bg-transparent p-0 !w-full !h-full select-none ;
+    }
+
+
+    .tabs_trigger {
+        @apply text-left !p-4 !h-[auto] w-full !border-l-4 !border-l-gray-200 !rounded-none opacity-50 cursor-pointer;
+    }
+
+    .tabs_trigger[data-state="active"] {
+        @apply !border-l-primary !shadow-none opacity-100;
+    }
+
+    .tabs_title {
+        @apply text-xl md:text-lg lg:text-xl font-bold;
+    }
+
+    .tabs_desc {
+        @apply text-lg md:text-sm lg:text-lg text-muted-foreground;
+        white-space: break-spaces;
+    }
+}

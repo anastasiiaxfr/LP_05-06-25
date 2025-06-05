@@ -9,8 +9,8 @@ import { menu } from "./contstant";
 
 function NavMenu() {
   return (
-    <NavigationMenu className="menu hidden sm:flex">
-      <NavigationMenuList>
+    <NavigationMenu className="menu_wrapper hidden lg:flex">
+      <NavigationMenuList className="menu">
         {menu.map((i, ind) => (
           <NavigationMenuItem key={ind}>
             <Link href={i.url} className="">

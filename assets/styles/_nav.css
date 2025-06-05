@@ -1,13 +1,68 @@
 @layer components {
     header {
-        @apply bg-green-400 py-4;
+        @apply bg-black text-white py-4;
     }
 
     .header .container {
         @apply flex flex-nowrap items-center justify-between gap-2;
     }
 
-    .menu a {
-        @apply cursor-pointer px-4 py-2 hover:bg-gray-100 rounded-sm font-medium;
+    .menu_wrapper {
+        @apply mr-auto ml-8;
     }
+
+    .menu {
+        @apply flex flex-nowrap !gap-8;
+    }
+
+    .menu a {
+        @apply relative inline-block cursor-pointer font-normal hover:text-primary mt-[3px];
+    }
+
+    .menu a::after {
+        content: "";
+        @apply block w-[0] h-[2px] bg-primary mt-[2px];
+        transition: width 0.3s;
+    }
+
+    .menu a:hover::after {
+        @apply w-full;
+    }
+
+    .nav_menu {
+        @apply hidden sm:flex gap-4 mr-4 ml-auto;
+    }
+
+    .nav_menu a {
+        @apply hover:text-primary transition;
+    }
+
+  .footer {
+    @apply bg-black text-white;
+  }
+
+  .footer_btm {
+    @apply py-10;
+  }
+
+  .footer_top {
+    @apply pt-10;
+  }
+
+  .footer_top .container {
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-[auto_auto_auto_auto] xl:grid-cols-7 gap-10;
+  }
+
+  .footer_top h3 {
+    @apply opacity-50;
+  }
+
+  .footer_menu {
+    @apply grid gap-3 mt-5;
+  }
+
+  .footer_menu a {
+    @apply transition hover:text-primary hover:underline;
+  }
+
 }

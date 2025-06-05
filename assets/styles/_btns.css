@@ -1,0 +1,7 @@
+.btn {
+    @apply rounded-none bg-primary text-white cursor-pointer hover:bg-1;
+}
+
+.btn_bd {
+    @apply bg-transparent rounded-none cursor-pointer hover:border-primary hover:text-primary;
+}

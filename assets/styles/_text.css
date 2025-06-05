@@ -1,0 +1,19 @@
+@layer base {
+    h1 {
+        @apply text-3xl sm:text-4xl lg:text-5xl font-bold mb-5;
+    }
+
+    h2 {
+        @apply text-2xl sm:text-3xl lg:text-4xl font-bold mb-5;
+    }
+
+    .subtitle {
+        @apply text-[1.2em] mb-10;
+    }
+
+    .topheading {
+        @apply uppercase opacity-50;
+    }
+
+    
+}

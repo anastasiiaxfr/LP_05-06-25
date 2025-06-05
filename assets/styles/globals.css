@@ -4,16 +4,15 @@
 @import "./_vars.css";  
 
 @import "./_default.css"; 
+@import "./_text.css"; 
+@import "./_btns.css"; 
 @import "./_nav.css"; 
-
+@import "./_custom.css"; 
 
 
 @layer base {
   * {
     @apply box-border;
-  }
-  body {
-    @apply text-foreground bg-yellow-50;
   }
 }
 
